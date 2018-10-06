@@ -1,0 +1,57 @@
+.content {
+
+	.content-row {
+		padding: 60px 0;
+
+		h2 {
+			font-size: 60px;
+			color: $dark;
+			position: relative;
+			margin-bottom: 30px;
+			&:after {
+				content: '';
+			    position: absolute;
+			    left: 0; 
+			    bottom: -15px;
+			    height: 4px;
+			    background-color: $dark;
+			    transition: width .25s;
+			    width: 15%;
+			}
+			&:before {
+				content: '';
+			    position: absolute;
+			    left: 100px; 
+			    bottom: -15px;
+			    height: 4px;
+			    background-color: $dark;
+			    transition: width .25s;
+			    width: 3%;
+			}
+		}
+
+		p {
+			font-size: 24px;
+			color: $dark;
+		}
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+	// .parallax-img {
+	// 	background-image: url("../images/side-img-1.jpg");
+
+	    
+	//     height: 100%; 
+
+	    
+	//     background-attachment: fixed;
+	//     background-position: center;
+	//     background-repeat: no-repeat;
+	//     background-size: cover;
+	// }
+	
+}

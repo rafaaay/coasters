@@ -1,0 +1,75 @@
+/* ======= HEADER ======= */
+.primary-header {
+	background: transparent;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 15px;
+
+	nav {
+		background: transparent;
+	}
+
+	.social-links {
+		a {
+			font-size: 24px;
+			color: $white !important;
+		}
+	}
+
+	.links {
+		a {
+			font-size: 24px;
+			color: $white !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			margin: 0 15px;
+			position: relative;
+			&:before {
+				background: $white;
+                content: "";
+                height: 2px;
+                left: 0;
+                position: absolute;
+                top: 43px;
+                transform: scaleX(0);
+                -webkit-transform: scaleX(0);
+                -moz-transform: scaleX(0);
+                -o-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                transform-origin: right top 0;
+                -webkit-transform-origin: right top 0;
+                -moz-transform-origin: right top 0;
+                -o-transform-origin: right top 0;
+                -ms-transform-origin: right top 0;
+                transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s,
+                -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+                -moz-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+                -o-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+                -ms-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+                width: 100%;
+			}
+			&:focus,
+            &:hover {
+                &:before {
+                    transform: scaleX(1);
+                    -webkit-transform: scaleX(1);
+                    -moz-transform: scaleX(1);
+                    -o-transform: scaleX(1);
+                    -ms-transform: scaleX(1);
+                    transform-origin: left top 0;
+                    -webkit-transform-origin: left top 0;
+                    -moz-transform-origin: left top 0;
+                    -o-transform-origin: left top 0;
+                    -ms-transform-origin: left top 0;
+                }
+            }	
+		}
+	}
+
+}
+
+/* ======= HEADER ======= */
+
+
+
