@@ -60,26 +60,23 @@ h1, h2, h3, h4, h5, h6 {
 /*         LAYOUT         */
 /* ====================== */
 /* ======= HEADER ======= */
-.primary-header {
-  background: transparent;
+.header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 15px; }
-  .primary-header nav {
+  padding-top: 15px;
+  z-index: 1000; }
+  .header nav {
     background: transparent; }
-  .primary-header .social-links a {
+  .header .social-links a {
+    font-size: 24px; }
+  .header .links a {
     font-size: 24px;
-    color: #fff !important; }
-  .primary-header .links a {
-    font-size: 24px;
-    color: #fff !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin: 0 15px;
     position: relative; }
-    .primary-header .links a:before {
-      background: #fff;
+    .header .links a:before {
       content: "";
       height: 2px;
       left: 0;
@@ -100,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
       -o-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
       -ms-transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
       width: 100%; }
-    .primary-header .links a:focus:before, .primary-header .links a:hover:before {
+    .header .links a:focus:before, .header .links a:hover:before {
       transform: scaleX(1);
       -webkit-transform: scaleX(1);
       -moz-transform: scaleX(1);
@@ -113,9 +110,33 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform-origin: left top 0; }
 
 /* ======= HEADER ======= */
+/*Primary Header*/
+.primary-header {
+  background: transparent;
+  transition: all 0.5s; }
+  .primary-header .social-links a {
+    color: #fff !important; }
+  .primary-header .links a {
+    color: #fff !important; }
+    .primary-header .links a:before {
+      background: #fff; }
+
+/*Primary Header*/
+/*Secondary Header*/
+.secondary-header {
+  background: #fff;
+  transition: all 0.5s; }
+  .secondary-header .social-links a {
+    color: #333 !important; }
+  .secondary-header .links a {
+    color: #333 !important; }
+    .secondary-header .links a:before {
+      background: #333; }
+
+/*Secondary Header*/
 /* ======= FOOTER ======= */
 .banner {
-  background: url(../images/bg-banner.jpg);
+  background: linear-gradient(rgba(22, 75, 106, 0.9), rgba(22, 75, 106, 0.9)), url(../images/bg-banner.jpg);
   background-size: cover;
   background-position: center;
   padding: 180px 0; }
@@ -132,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 4px;
       background-color: #fff;
       transition: width .25s;
-      width: 15%; }
+      width: 90px; }
     .banner .banner-text h2:before {
       content: '';
       position: absolute;
@@ -141,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 4px;
       background-color: #fff;
       transition: width .25s;
-      width: 3%; }
+      width: 20px; }
   .banner .banner-text p {
     font-size: 24px;
     color: #fff; }
@@ -150,7 +171,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 0; }
   .content .content-row h2 {
     font-size: 60px;
-    color: #333;
     position: relative;
     margin-bottom: 30px; }
     .content .content-row h2:after {
@@ -159,22 +179,182 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       bottom: -15px;
       height: 4px;
-      background-color: #333;
       transition: width .25s;
-      width: 15%; }
+      width: 90px; }
     .content .content-row h2:before {
       content: '';
       position: absolute;
       left: 100px;
       bottom: -15px;
       height: 4px;
-      background-color: #333;
       transition: width .25s;
-      width: 3%; }
+      width: 20px; }
   .content .content-row p {
-    font-size: 24px;
-    color: #333; }
+    font-size: 24px; }
   .content .content-row img {
     width: 100%; }
+
+.who-we-are h2 {
+  color: #333; }
+  .who-we-are h2:after {
+    background-color: #333; }
+  .who-we-are h2:before {
+    background-color: #333; }
+.who-we-are p {
+  color: #333; }
+
+.what-we-do {
+  background: linear-gradient(rgba(22, 75, 106, 0.9), rgba(22, 75, 106, 0.9)), url(../images/bg-content-2.jpg);
+  background-size: cover;
+  background-position: center; }
+  .what-we-do h2 {
+    color: #fff; }
+    .what-we-do h2:after {
+      background-color: #fff; }
+    .what-we-do h2:before {
+      background-color: #fff; }
+  .what-we-do p {
+    color: #fff; }
+
+.facts {
+  padding: 150px 0 60px 0; }
+  .facts .fact-block {
+    background: #333;
+    min-height: 400px;
+    text-align: center;
+    padding: 0 10px; }
+    .facts .fact-block p {
+      transform: translateY(-20px);
+      color: #fff;
+      font-size: 24px; }
+    .facts .fact-block .green-text span {
+      color: #009584;
+      font-weight: bold; }
+    .facts .fact-block .orange-text span {
+      color: #e64a19;
+      font-weight: bold; }
+    .facts .fact-block .blue-text span {
+      color: #1976d2;
+      font-weight: bold; }
+  .facts .progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+    transform: translateY(-75px); }
+  .facts .progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .facts .progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+  .facts .progress .progress-left {
+    left: 0; }
+  .facts .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0; }
+  .facts .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left; }
+  .facts .progress .progress-right {
+    right: 0; }
+  .facts .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards; }
+  .facts .progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #333;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%; }
+  .facts .progress.blue .progress-bar {
+    border-color: #1976d2; }
+  .facts .progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s; }
+  .facts .progress.blue .progress-value {
+    color: #1976d2; }
+  .facts .progress.orange .progress-bar {
+    border-color: #e64a19; }
+  .facts .progress.orange .progress-left .progress-bar {
+    animation: loading-4 0.4s linear forwards 1.8s; }
+  .facts .progress.orange .progress-value {
+    color: #e64a19; }
+  .facts .progress.green .progress-bar {
+    border-color: #009584; }
+  .facts .progress.green .progress-left .progress-bar {
+    animation: loading-5 1.2s linear forwards 1.8s; }
+  .facts .progress.green .progress-value {
+    color: #009584; }
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg); } }
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg); } }
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg); } }
+  @media only screen and (max-width: 990px) {
+    .facts .progress {
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

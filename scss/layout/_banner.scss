@@ -1,5 +1,5 @@
 .banner {
-	background: url(../images/bg-banner.jpg);
+	background: linear-gradient(rgba(22, 75, 106, 0.9), rgba(22, 75, 106, 0.9)),url(../images/bg-banner.jpg);
 	background-size: cover;
 	background-position: center;
 	padding: 180px 0;
@@ -18,7 +18,7 @@
 			    height: 4px;
 			    background-color: $white;
 			    transition: width .25s;
-			    width: 15%;
+			    width: 90px;
 			}
 			&:before {
 				content: '';
@@ -28,7 +28,7 @@
 			    height: 4px;
 			    background-color: $white;
 			    transition: width .25s;
-			    width: 3%;
+			    width: 20px;
 			}
 		}
 

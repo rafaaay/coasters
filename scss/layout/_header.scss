@@ -1,10 +1,10 @@
 /* ======= HEADER ======= */
-.primary-header {
-	background: transparent;
+.header {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	padding-top: 15px;
+	z-index: 1000;
 
 	nav {
 		background: transparent;
@@ -13,20 +13,17 @@
 	.social-links {
 		a {
 			font-size: 24px;
-			color: $white !important;
 		}
 	}
 
 	.links {
 		a {
 			font-size: 24px;
-			color: $white !important;
 			padding-left: 0 !important;
 			padding-right: 0 !important;
 			margin: 0 15px;
 			position: relative;
 			&:before {
-				background: $white;
                 content: "";
                 height: 2px;
                 left: 0;
@@ -70,6 +67,50 @@
 }
 
 /* ======= HEADER ======= */
+
+/*Primary Header*/
+.primary-header {
+	background: transparent;
+	transition: all 0.5s;
+
+	.social-links {
+		a {
+			color: $white !important;
+		}
+	}
+
+	.links {
+		a {
+			color: $white !important;
+			&:before {
+				background: $white;
+			}
+		}
+	}
+}
+/*Primary Header*/
+
+/*Secondary Header*/
+.secondary-header {
+	background: $white;
+	transition: all 0.5s;
+
+	.social-links {
+		a {
+			color: $dark !important;
+		}
+	}
+
+	.links {
+		a {
+			color: $dark !important;
+			&:before {
+				background: $dark;
+			}
+		}
+	}
+}
+/*Secondary Header*/
 
 
 

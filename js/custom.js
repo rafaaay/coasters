@@ -2,26 +2,20 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
 });
 
-/*======== Doucument Ready Function =========*/
-jQuery(document).ready(function () {
+// Header Switch On Scroll
+$(document).ready(function(){
 
-    //CACHE JQUERY OBJECTS
-    var $window = $(window);
+	var header = $(".primary-header");
 
-    /*======= jQuery navbar on scroll =========*/
-
-
-    $window.on('scroll' , function () {
-
-        if ($(".navbar-default").add(".navbar-inverse").offset().top > 50) {
-            $(".reveal-menu-home").addClass("sticky-nav");
-            $(".reveal-menu-blog").addClass("sticky-nav-white");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 100) {
+            header.removeClass("primary-header").addClass("secondary-header");
         } else {
-            $(".reveal-menu-home").removeClass("sticky-nav");
-            $(".reveal-menu-blog").removeClass("sticky-nav-white");
+            header.removeClass("secondary-header").addClass("primary-header");
         }
     });
 
-    /*======= End jQuery navbar on scroll =========*/
-
- }
+});
+// Header Switch On Scroll
