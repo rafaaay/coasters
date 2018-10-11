@@ -1,0 +1,38 @@
+.products {
+	background: linear-gradient(rgba(22, 75, 106, 0.9), rgba(22, 75, 106, 0.9)), url(../images/bg-content-2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .section-title {
+    	h2 {
+    		color: $white;
+    		&:after {
+    			background-color: $white;
+    		}
+    		&:before {
+    			background-color: $white;
+    		}
+    	}
+    }
+
+    .product-slider {
+    	padding-top: 75px;
+
+		.product {
+			img {
+				max-width: 600px;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+			}
+
+			h4 {
+				text-align: center;
+				color: $white;
+			}
+		}
+    }
+
+}

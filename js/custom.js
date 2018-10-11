@@ -1,7 +1,3 @@
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
-
 // Header Switch On Scroll
 $(document).ready(function(){
 
@@ -19,3 +15,15 @@ $(document).ready(function(){
 
 });
 // Header Switch On Scroll
+
+
+// Slick Slider Initializing
+$(document).ready(function(){
+  $('.product-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
+// Slick Slider Initializing

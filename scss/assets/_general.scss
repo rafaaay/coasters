@@ -16,3 +16,31 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 // Text Styling
+
+// Section Title
+.section-title {
+	h2 {
+		font-size: 60px;
+		position: relative;
+		margin-bottom: 30px;
+		&:after {
+			content: '';
+		    position: absolute;
+		    left: 0; 
+		    bottom: -15px;
+		    height: 4px;
+		    transition: width .25s;
+		    width: 90px;
+		}
+		&:before {
+			content: '';
+		    position: absolute;
+		    left: 100px; 
+		    bottom: -15px;
+		    height: 4px;
+		    transition: width .25s;
+		    width: 20px;
+		}
+	}
+}
+// Section Title

@@ -6,6 +6,10 @@
 	padding-top: 15px;
 	z-index: 1000;
 
+	.logo img {
+		width: 211px;
+	}
+
 	nav {
 		background: transparent;
 	}
@@ -87,6 +91,18 @@
 			}
 		}
 	}
+
+	.logo-light {
+		display: block;
+		transition: all 0.5s;
+		// visibility: visible;
+	}
+
+	.logo-dark {
+		display: none;
+		transition: all 0.5s;
+		// visibility: hidden;
+	}
 }
 /*Primary Header*/
 
@@ -108,6 +124,18 @@
 				background: $dark;
 			}
 		}
+	}
+
+	.logo-light {
+		display: none;
+		transition: all 0.5s;
+		// visibility: hidden;
+	}
+
+	.logo-dark {
+		display: block;
+		transition: all 0.5s;
+		// visibility: visible;
 	}
 }
 /*Secondary Header*/
