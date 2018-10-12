@@ -1,0 +1,23 @@
+.map {
+	padding-top: 60px;
+    padding-bottom: 60px;
+
+	.section-title {
+    	h2 {
+    		color: $dark;
+    		&:after {
+    			background-color: $dark;
+    		}
+    		&:before {
+    			background-color: $dark;
+    		}
+    	}
+    }
+
+    .location-on-map {
+    	iframe {
+    		width: 100%;
+    	}
+    }
+
+}

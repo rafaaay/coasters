@@ -44,3 +44,18 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 // Section Title
+
+// Custom Button
+.custom-btn {
+	background: $dark;
+	border: 2px solid $dark;
+	color: $white;
+	padding: .375rem 3.75rem;
+	transition: all .5s;
+
+	&:hover {
+		background: $white;
+		color: $dark;
+	}
+}
+// Custom Button

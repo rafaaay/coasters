@@ -77,6 +77,16 @@ h1, h2, h3, h4, h5, h6 {
     transition: width .25s;
     width: 20px; }
 
+.custom-btn {
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+  padding: .375rem 3.75rem;
+  transition: all .5s; }
+  .custom-btn:hover {
+    background: #fff;
+    color: #333; }
+
 /* ====================== */
 /*         LAYOUT         */
 /* ====================== */
@@ -154,6 +164,9 @@ h1, h2, h3, h4, h5, h6 {
 /*Secondary Header*/
 .secondary-header {
   background: #fff;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(5, 5, 5, 0.8);
+  -moz-box-shadow: 0 8px 6px -6px rgba(5, 5, 5, 0.8);
+  box-shadow: 0 8px 6px -6px rgba(5, 5, 5, 0.8);
   transition: all 0.5s; }
   .secondary-header .social-links a {
     color: #333 !important; }
@@ -170,6 +183,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Secondary Header*/
 /* ======= FOOTER ======= */
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: rgba(22, 75, 106, 0.9); }
+  .footer .footer-text {
+    color: #fff; }
+    .footer .footer-text p {
+      margin-bottom: 0;
+      line-height: 49px; }
+    .footer .footer-text a {
+      color: #fff; }
+      .footer .footer-text a:hover {
+        color: #fff; }
+  .footer .footer-logo {
+    width: 211px;
+    margin: 0 auto; }
+    .footer .footer-logo img {
+      width: 100%; }
+
 .banner {
   background: linear-gradient(rgba(22, 75, 106, 0.9), rgba(22, 75, 106, 0.9)), url(../images/bg-banner.jpg);
   background-size: cover;
@@ -428,7 +460,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 30px; }
     .contact-us .section-content .contact-info {
       background: #333;
-      padding: 25px; }
+      padding: 25px;
+      min-height: 400px;
+      max-height: 400px;
+      -webkit-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      -moz-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      -o-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      -ms-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      border-radius: 8px; }
       .contact-us .section-content .contact-info .contact-info-row {
         padding: 10px 0; }
       .contact-us .section-content .contact-info h3 {
@@ -449,9 +489,28 @@ h1, h2, h3, h4, h5, h6 {
             color: #fff; }
     .contact-us .section-content .contact-form {
       padding: 25px;
-      border: 1px solid #333; }
+      min-height: 400px;
+      max-height: 400px;
+      -webkit-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      -moz-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      -o-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      -ms-box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.8);
+      border-radius: 8px; }
       .contact-us .section-content .contact-form h3 {
         margin-bottom: 15px;
         color: #333; }
+
+.map {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .map .section-title h2 {
+    color: #333; }
+    .map .section-title h2:after {
+      background-color: #333; }
+    .map .section-title h2:before {
+      background-color: #333; }
+  .map .location-on-map iframe {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

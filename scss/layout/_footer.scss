@@ -1,4 +1,31 @@
 /* ======= FOOTER ======= */
-#footer {
-	
+.footer {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: rgba(22, 75, 106, 0.9);
+
+	.footer-text {
+		color: $white;
+
+		p {
+			margin-bottom: 0;
+			line-height: 49px;
+		}
+
+		a {
+			color: $white;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+
+	.footer-logo {
+		width: 211px;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+
 }
