@@ -18,7 +18,7 @@
     }
 
     .product-slider {
-    	padding-top: 75px;
+    	margin-top: 25px;
 
 		.product {
 			img {
@@ -32,6 +32,22 @@
 				text-align: center;
 				color: $white;
 			}
+		}
+
+		.slick-prev, .slick-next {
+			top: 48%;
+		}
+
+		.slick-prev:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f0a8";
+		}
+
+		.slick-next:before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f0a9";
 		}
     }
 
