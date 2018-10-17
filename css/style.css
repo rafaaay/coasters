@@ -51,6 +51,9 @@ body {
 .container {
   max-width: 1265px;
   margin: 0 auto; }
+  @media (min-width: 0px) and (max-width: 575px) {
+    .container {
+      width: 100%; } }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -85,6 +88,42 @@ h1, h2, h3, h4, h5, h6 {
   .custom-btn:hover {
     background: #fff;
     color: #333; }
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .hidden-xs {
+    display: none !important; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-md {
+    display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-lg {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-xl {
+    display: none !important; } }
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .visible-xs {
+    display: block !important; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  .visible-xs {
+    display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-xs {
+    display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-xs {
+    display: none !important; } }
+@media (min-width: 1200px) {
+  .visible-xs {
+    display: none !important; } }
 
 /* ====================== */
 /*         LAYOUT         */
@@ -188,9 +227,15 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(22, 75, 106, 0.9); }
   .footer .footer-text {
     color: #fff; }
+    @media (min-width: 0px) and (max-width: 575px) {
+      .footer .footer-text {
+        text-align: center; } }
     .footer .footer-text p {
       margin-bottom: 0;
       line-height: 55px; }
+      @media (min-width: 0px) and (max-width: 575px) {
+        .footer .footer-text p {
+          line-height: normal; } }
     .footer .footer-text a {
       color: #fff; }
       .footer .footer-text a:hover {
@@ -200,6 +245,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto; }
     .footer .footer-logo img {
       width: 100%; }
+  .footer .footer-links {
+    text-align: center; }
+    .footer .footer-links a {
+      font-size: 24px;
+      color: #fff;
+      display: inline-block; }
 
 .banner {
   background: linear-gradient(rgba(22, 75, 106, 0.9), rgba(22, 75, 106, 0.9)), url(../images/bg-banner.jpg);

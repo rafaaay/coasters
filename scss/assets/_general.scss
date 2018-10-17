@@ -8,6 +8,9 @@ body {
 	// width: 1265px;
 	max-width: 1265px;
 	margin: 0 auto;
+	@include xs {
+		width: 100%;
+	}
 }
 
 
@@ -59,3 +62,70 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 // Custom Button
+
+
+// Visibility Classes
+.hidden-xs {
+
+	@include xs {
+		display: none !important;
+	}
+
+}
+
+.hidden-sm {
+
+	@include sm {
+		display: none !important;
+	}
+
+}
+
+.hidden-md {
+
+	@include md {
+		display: none !important;
+	}
+
+}
+
+.hidden-lg {
+
+	@include lg {
+		display: none !important;
+	}
+
+}
+
+.hidden-xl {
+
+	@include xl {
+		display: none !important;
+	}
+
+}
+
+.visible-xs {
+
+	@include xs {
+		display: block !important;
+	}
+
+	@include sm {
+		display: none !important;
+	}
+
+	@include md {
+		display: none !important;
+	}
+
+	@include lg {
+		display: none !important;
+	}
+
+	@include xl {
+		display: none !important;
+	}
+
+}
+// Visibility Classes
